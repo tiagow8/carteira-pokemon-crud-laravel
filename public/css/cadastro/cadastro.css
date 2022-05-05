@@ -1,0 +1,147 @@
+/* STANDARD STYLE */
+*, html, body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* APPLYING BACKGROUND TO THE SITE */
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../../images/unnamed.webp");
+  background-size: 100% 100%;
+  background-position: cover;
+  height: 110vh;
+  justify-content: center;
+}
+
+.containerForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 30vw;
+  color: white;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+
+.containerForm a {
+  color: #fffb29;
+  text-decoration: underline;
+}
+
+.containerForm .avatarsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.containerForm::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-box-shadow: inset 0 0 2000px black;
+          box-shadow: inset 0 0 2000px black;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  z-index: -1;
+}
+
+.imgAvatar {
+  display: block;
+  width: 100px;
+  height: auto;
+  border: 1px white solid;
+  border-radius: 10px;
+  margin: 0 5px;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form * {
+  display: block;
+  color: black;
+  margin: 5px 0;
+  padding: 5px;
+}
+
+.form label {
+  color: #f1ff2c;
+}
+
+.form input {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  color: black;
+  border-radius: 5px;
+  overflow: hidden;
+  text-indent: 2%;
+}
+
+.form input:focus {
+  outline: none;
+}
+
+.form p {
+  color: white;
+}
+
+.form datalist {
+  display: none;
+}
+
+.form label[for="feminino"], .form label[for="masculino"] {
+  font-size: 20px;
+}
+
+.form label[for="feminino"] input, .form label[for="masculino"] input {
+  display: inline;
+  margin: 5px;
+}
+
+a {
+  font-size: 25px;
+}
+/*# sourceMappingURL=cadastro.css.map */

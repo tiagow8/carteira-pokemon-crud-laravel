@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.btn:hover {
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5), inset 5px 5px 8px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5), inset 5px 5px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f7f7f7;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #313131;
+  border: 1px white solid;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #343552;
+}
+
+.gameboy {
+  display: block;
+  position: relative;
+  background-color: #00CED1;
+  width: 95vw;
+  height: 90vh;
+  border-radius: 23%;
+  z-index: 999;
+}
+
+.gameboyBack {
+  display: block;
+  position: absolute;
+  background-color: lightgray;
+  width: 95.2vw;
+  height: 88vh;
+  border-radius: 20%;
+}
+
+.gamepad {
+  display: block;
+  position: relative;
+  width: 10%;
+  height: 10%;
+  top: 30%;
+  left: 5%;
+}
+
+.gamepad .gamepadVerticalLine, .gamepad .gamepadHorizontalLine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  width: 35px;
+  height: 100px;
+  background-color: #d1d1d1;
+  left: 50%;
+}
+
+.gamepad .gamepadVerticalLine span, .gamepad .gamepadHorizontalLine span {
+  display: block;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0 auto;
+}
+
+.gamepadVerticalLine {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1px;
+}
+
+.gamepadHorizontalLine {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.buttonsMenu {
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 60%;
+  left: 10%;
+}
+
+.buttonsMenu .buttonStart, .buttonsMenu .buttonSelect {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 30px;
+  background-color: #b9bd42;
+  border-radius: 30px;
+  margin: 10px 0px;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+  text-align: center;
+  border: 1px solid #343552;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5), inset 5px 5px 8px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5), inset 5px 5px 8px rgba(0, 0, 0, 0.5);
+}
+
+.buttonsMenu .buttonStart p, .buttonsMenu .buttonSelect p {
+  display: block;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.buttonsMenu .buttonStart .whiteButton, .buttonsMenu .buttonSelect .whiteButton {
+  display: block;
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: white;
+  right: 0px;
+  top: 0px;
+  border: 2px solid #343552;
+}
+
+.powerButton {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #f76511;
+  border-radius: 50%;
+  top: 10%;
+  right: 20%;
+}
+
+.powerButton p {
+  display: block;
+  position: absolute;
+  left: 120%;
+  line-height: 30px;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.buttonsAction * {
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #b9bd42;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+}
+
+.buttonA {
+  top: 30%;
+  right: 5%;
+}
+
+.buttonB {
+  top: 35%;
+  right: 10%;
+}
+
+.lines {
+  display: block;
+  position: absolute;
+  top: 60%;
+  right: 10%;
+  width: 100px;
+  height: 300px;
+}
+
+.lines .line {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background-color: black;
+  border-radius: 10px;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  margin: 5px 0;
+}
+
+.screen {
+  display: block;
+  position: relative;
+  margin: auto;
+  width: 50%;
+  height: 80%;
+  background-color: #c2c2c2;
+  padding: 5px;
+  border-radius: 50px;
+  border: 10px black solid;
+}
+
+.screen * {
+  color: white;
+}
+
+.screen .btnAddPokemonPage {
+  display: block;
+  position: absolute;
+  left: 80px;
+  background-color: #0051ff;
+  border: 2px black solid;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.screen .btnAddPokemonPage:hover {
+  border-color: orange;
+}
+
+.screen .userInfoContainer {
+  display: block;
+  position: relative;
+  padding: 5px;
+  top: 50%;
+  left: 5%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #000000;
+  border-radius: 30px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+  border: 3px #464646 solid;
+}
+
+.screen .userInfoContainer * {
+  display: block;
+}
+
+.screen .userInfoContainer .imgAvatar {
+  display: block;
+  margin: auto;
+  width: 80px;
+  left: 5%;
+  top: 50%;
+}
+
+.screen .pokemonsInfoContainer {
+  display: block;
+  position: absolute;
+  width: 70%;
+  top: 5%;
+  right: 10px;
+  height: 90%;
+  overflow-y: auto;
+}
+
+.screen .pokemonsInfoContainer .pokemonInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 90%;
+  height: 90px;
+  margin: 5px auto;
+  background-color: #0077ff;
+  border-radius: 10px;
+  border: 3px rgba(0, 0, 0, 0) solid;
+}
+
+.screen .pokemonsInfoContainer .pokemonInfo .imgPokemon {
+  display: block;
+  height: 100%;
+  background-image: url("../images/pokeball.png");
+  background-size: cover;
+}
+
+.screen .pokemonsInfoContainer .pokemonInfo .typePokemon, .screen .pokemonsInfoContainer .pokemonInfo .namePokemon {
+  display: block;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.screen .pokemonsInfoContainer .pokemonInfo .namePokemon {
+  color: white;
+  font-weight: bolder;
+}
+
+.screen .pokemonsInfoContainer .pokemonInfo .typePokemon {
+  background-color: gray;
+  color: white;
+}
+
+.screen .pokemonsInfoContainer .pokemonInfo * {
+  margin: 0 5px;
+}
+
+.screen .pokemonsInfoContainer .pokemonInfo:hover {
+  border: 3px #f76511 solid;
+}
+/*# sourceMappingURL=menuUser.css.map */

@@ -1,0 +1,100 @@
+/* STANDARD STYLE */
+*, html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* APPLYING BACKGROUND TO THE SITE */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../images/pokemonEmerald.jpg');
+    background-position: cover;
+    height: 100vh;
+}
+// div that contains the form
+.containerForm{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 30vw;
+    color: white;
+    font-size: 3rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    a{
+        color: rgb(255, 251, 41);
+        text-decoration: underline;
+    }
+    .avatarsContainer{
+        display: flex;
+        flex-direction: row;
+    }
+}
+// effects to blur
+.containerForm::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(0, 0, 0, 1);
+    filter: blur(5px);
+    z-index: -1;
+}
+.imgAvatar{
+    display: block;
+    width: 100px;
+    height: auto;
+    border: 1px white solid;
+    border-radius: 10px;
+    margin: 0 5px;
+}
+// the <form> tag styles
+.form{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    *{
+        display: block;
+        color: black;
+        margin: 5px 0;
+        padding: 5px;
+    }
+    label{
+        color: rgb(241, 255, 44);
+    }
+    input{
+        display: block;
+        box-sizing: border-box;
+        border: none;
+        color: black;
+        border-radius: 5px;
+        overflow: hidden;
+        text-indent: 2%;
+        &:focus{
+            outline: none;
+        }
+    }
+    p{
+        color: white;
+    }
+    datalist{
+        display: none;
+    }
+    label[for="feminino"], label[for="masculino"]{
+        font-size: 20px;
+        input{
+            display: inline;
+            margin: 5px;
+        }
+    }
+}
+a{
+    font-size: 25px;
+}
