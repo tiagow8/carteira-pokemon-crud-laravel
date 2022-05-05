@@ -8,8 +8,8 @@
 </p>
 <h1>Pokedéx</h1>
 
-Neste projeto você pode cadastrar um usuário e posteriormente logar com ele, podendo adicionar pokemons em seu registro, tudo isso fica guardado
-em um banco de dados.
+Neste projeto você pode cadastrar um usuário e posteriormente logar com ele, podendo adicionar pokemons em seu registro(carteira), tudo isso fica guardado
+em um banco de dados. versão crud 
 ## Quero rodar em minha máquina, como fazer?
 
 Primeiro irá ser necessário iniciar um projeto laravel. Para isso, veja a documentação do laravel neste link: https://laravel.com/docs/9.x/installation
